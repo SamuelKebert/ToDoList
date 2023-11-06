@@ -9,6 +9,17 @@ import {
 } from 'react-native';
 
 function ToDoForm () {
+      
+    return (
+        <View style={styles.form}>
+            <TextInput
+                style={styles.input}
+                placeholder="Add a new task..."
+            />
+            <Button title="Add" />
+        </View>
+    )
+}
     const styles = StyleSheet.create({
         form: {
           flexDirection: 'row',
@@ -26,16 +37,5 @@ function ToDoForm () {
           marginRight: 10,
         },
       });
-      
-    return (
-        <View style={styles.form}>
-            <TextInput
-                style={styles.input}
-                placeholder="Add a new task..."
-            />
-            <Button title="Add" />
-        </View>
-    )
-}
 
 export default ToDoForm;
